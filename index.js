@@ -23,8 +23,8 @@ const todoList = () => {
   let out=list
      .map(
        (item)=>
-          '${item.completed ? "[x] " :"[ ] "}${item.title} ${
-          item.dueDate === today ? " ": item.dueDate
+          '${item.completed ? "[x] " : "[ ] "}${item.title} ${
+          item.dueDate === today ? " " : item.dueDate
           }'
          )
   .join("\n");

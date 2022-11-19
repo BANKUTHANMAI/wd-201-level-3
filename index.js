@@ -20,11 +20,15 @@ const todoList = () => {
  };
 
   const toDisplaybleList=(list)=>{
-  let out=list.map((item)=>'${item.completed ? "[x]" :"[]"}${item.title} ${item.dueDate === today ?" ": item.dueDate}').join("\n");
+  let out=list
+     .map((item)=>
+          '${item.completed ? "[x]" :"[]"}${item.title} ${item.dueDate === today ?" ": item.dueDate}'
+         )
+  .join("\n");
    return out;
      };
   return { all, add, markAsComplete, overdue, dueToday, dueLater, toDisplayableList };
-
+};
 // ####################################### #
 // DO NOT CHANGE ANYTHING BELOW THIS LINE. #
 // ####################################### #

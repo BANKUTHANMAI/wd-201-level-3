@@ -24,7 +24,6 @@ const todoList = () => {
    return out;
      };
   return { all, add, markAsComplete, overdue, dueToday, dueLater, toDisplayableList };
-};
 
 // ####################################### #
 // DO NOT CHANGE ANYTHING BELOW THIS LINE. #
